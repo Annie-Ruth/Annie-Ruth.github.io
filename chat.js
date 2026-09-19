@@ -1,6 +1,4 @@
-// TODO: after deploying chat-backend to Render, replace with the Render URL,
-// e.g. 'https://chat-backend-xxxx.onrender.com/api/chat'
-const CHAT_API_URL = 'http://localhost:3001/api/chat';
+const CHAT_API_URL = 'https://chat-backend-hfn1.onrender.com/api/chat';
 
 const chatWidget = document.getElementById('chatWidget');
 const chatToggle = document.getElementById('chatToggle');
