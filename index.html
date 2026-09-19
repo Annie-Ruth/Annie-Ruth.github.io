@@ -341,6 +341,35 @@
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 </footer>
 
+<div class="chat-widget" id="chatWidget">
+  <button class="chat-toggle" id="chatToggle" aria-label="Open chat with Annie's assistant" aria-expanded="false">
+    <span class="chat-toggle-icon" aria-hidden="true">💬</span>
+  </button>
+  <div class="chat-panel" id="chatPanel" hidden>
+    <div class="chat-header">
+      <div>
+        <p class="chat-title">Annie's Assistant</p>
+        <p class="chat-subtitle">Ask about her experience &amp; skills</p>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages" role="log" aria-live="polite"></div>
+    <form class="chat-form" id="chatForm">
+      <input
+        type="text"
+        id="chatInput"
+        class="chat-input"
+        placeholder="e.g. What AWS services does she use?"
+        maxlength="500"
+        autocomplete="off"
+        aria-label="Type your question"
+      />
+      <button type="submit" class="chat-send" aria-label="Send message">➤</button>
+    </form>
+  </div>
+</div>
+
 <script src="script.js"></script>
+<script src="chat.js"></script>
 </body>
 </html>
